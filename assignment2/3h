@@ -1,0 +1,10 @@
+CREATE TEMP VIEW H AS
+SELECT docid, term, count FROM frequency
+WHERE docid='10080_txt_crude' OR docid='17035_txt_earn';
+
+SELECT doc1, doc2, SUM(count) FROM
+(SELECT A.docid AS doc1, B.docid AS doc2, A.count * B.count AS count
+FROM H AS A 
+JOIN H AS B
+ON A.term = B.term AND A.docid < B.docid)
+GROUP BY doc1, doc2;

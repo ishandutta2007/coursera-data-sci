@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Assignment Details | Introduction to Data Science</title>
+<link rel="stylesheet" href="Assignment%20Details%20%7C%20Introduction%20to%20Data%20Science_files/spark.css">
+<link rel="stylesheet" href="Assignment%20Details%20%7C%20Introduction%20to%20Data%20Science_files/course.css">
+<link rel="icon" href="https://spark-public.s3.amazonaws.com/datasci/static/images/favicon.ico">
+<script src="Assignment%20Details%20%7C%20Introduction%20to%20Data%20Science_files/MathJax.js" type="text/javascript"></script><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1px; bottom: 2px; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuTitle {background-color: #CCCCCC; margin: -5px 0 0 0; text-align: center; font-style: italic; font-size: 80%; color: #444444; padding: 2px 0; overflow: hidden}
+.MathJax_MenuArrow {position: absolute; right: .5em; color: #666666}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_Menu_Close {position: absolute; width: 31px; height: 31px; top: -15px; left: -15px}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style></head>
+
+<body style="tab-interval:.5in" bgcolor="white" lang="EN-US"><div style="display: none;" id="MathJax_Message"></div>
+    
+    <a href="#course-page-content" class="hidden">Skip Navigation</a>
+    <div class="hidden">
+        This page features MathJax technology to render mathematical formulae.
+        If you are using a screen reader, please visit <a href="http://www.dessci.com/en/products/mathplayer/">MathPlayer</a> to download the plugin for your browser. Please note that this is an Internet Explorer-only plugin at this time.
+    </div>
+
+    <h1 class="hidden">Introduction to Data Science</h1>
+
+    
+
+<div class="course-topbar container-fluid" role="banner">
+
+    <div class="row-fluid">
+        
+        <div class="span3">
+          <a href="https://www.coursera.org/" class="course-topbar-logo" data-if-linkable="add-referrer"></a>
+        </div>
+
+        <div class="course-topbar-nav-container span9" style="float:right;">
+            <h2 class="hidden">Top Navigation Bar</h2>
+
+            <ul class="course-topbar-nav-list">
+                <li class="course-topbar-nav-list-item">
+                  <a href="https://www.coursera.org/courses" data-if-linkable="add-referrer">Courses</a>
+                </li>
+
+                                
+                <li class="course-topbar-nav-list-item" tabindex="0" role="button" aria-haspopup="true" aria-expanded="false" aria-owns="course-topbar-my" data-popup="#course-topbar-my" data-popup-bind-open="mouseenter" data-popup-close="" style="cursor:pointer;" data-popup-direction="se">
+                                        <a data-user-id="3397025">  
+                        Eloy Díaz Álvarez 
+                        <i class="icon-caret-down"></i>
+                    </a>
+                </li>
+               
+                            </ul>
+        </div>
+    </div>
+
+    <div id="course-topbar-aboutus" class="course-topbar-sublist">
+        <a class="course-topbar-sublist-item" href="https://www.coursera.org/about/jobs" target="_new" data-if-linkable="add-referrer">Jobs</a>
+        <a class="course-topbar-sublist-item" href="https://www.coursera.org/about/team" target="_new" data-if-linkable="add-referrer">Team</a>
+        <a class="course-topbar-sublist-item" href="https://www.coursera.org/about/contact" target="_new" data-if-linkable="add-referrer">Contact Us</a>
+        <a class="course-topbar-sublist-item" href="https://www.coursera.org/about/" target="_new" data-if-linkable="add-referrer">About Us</a>
+    </div>
+
+    <div id="course-topbar-my" class="course-topbar-sublist">
+        <a class="course-topbar-sublist-item" href="https://www.coursera.org/" target="_new">Courses</a>
+        <a class="course-topbar-sublist-item" href="https://www.coursera.org/account/profile" target="_new">Profile</a>
+        <a class="course-topbar-sublist-item" href="https://www.coursera.org/account/records" target="_new">Course Records</a>
+        <a class="course-topbar-sublist-item" href="https://www.coursera.org/account/settings" target="_new">Settings</a>
+        <a class="course-topbar-sublist-item" href="https://class.coursera.org/datasci-001/class/preferences">Course Preferences</a>
+        <a class="course-topbar-sublist-item" href="https://class.coursera.org/datasci-001/auth/logout">Sign Out</a>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+<style type="text/css">
+ 
+
+
+</style>
+<div class="course-topbanner">
+  <div class="course-topbanner-university-logo">
+    <a href="https://www.coursera.org/uw" class="coursera-university-color" target="_blank" data-if-linkable="add-referrer" title="https://www.coursera.org/uw">
+      <img src="Assignment%20Details%20%7C%20Introduction%20to%20Data%20Science_files/university_logo.png" alt="uw">
+    </a>
+  </div>
+
+  
+  <h1 class="course-topbanner-header">
+      <a class="course-topbanner-name coursera-university-color" href="https://class.coursera.org/datasci-001/class/index" data-if-linkable="modal-lock">
+        Introduction to Data Science      </a>
+      <br>
+      <span class="course-topbanner-instructor" style="">
+        by  Bill  Howe      </span>
+  </h1>
+</div>
+    
+        <div class="container-fluid" style="position:relative;">
+        <div class="row-fluid">
+            <div id="course-page-sidebar" role="navigation">
+                <div class="course-navbar-container">
+	<a href="https://class.coursera.org/datasci-001/class/index">
+	<img src="Assignment%20Details%20%7C%20Introduction%20to%20Data%20Science_files/logo.png" style="width: 205px;height: 116px;margin: -15px 0px 8px 1px; box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);" alt="Course Home Page">
+	</a>
+
+
+<h2 class="hidden">Side Navigation Bar</h2>
+<ul class="course-navbar-list">
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/datasci-001/class/index" data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Home							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/datasci-001/lecture/index" data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Video Lectures							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/datasci-001/forum/index" data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Discussion Forums							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								</li>
+	
+		
+	<li class="course-navbar-item active">
+								<a href="https://class.coursera.org/datasci-001/assignment/index" data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Programming Assignments							<span class="course-navbar-selected-marker">(selected)</span></a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/datasci-001/quiz/index" data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Quizzes							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/datasci-001/human_grading/index" data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Peer Assessments							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/datasci-001/wiki/view?page=OptionalRealWorldProject" data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Optional Real-World Project							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/datasci-001/wiki/view?page=syllabus" data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Syllabus							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/datasci-001/wiki/view?page=courselogistics" data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Course Logistics							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/datasci-001/wiki/view?page=tableau_aws" data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Running Tableau on AWS							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/datasci-001/wiki/view?page=ClassVirtualMachine" data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Class Virtual Machine							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/datasci-001/wiki/view?page=GithubInstructions" data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Github Instructions							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/datasci-001/wiki/view?page=PythonResources" data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Python Resources							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/datasci-001/wiki/view?page=awssetup" data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				AWS Setup							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/datasci-001/quiz/index?quiz_type=survey" data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Surveys							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/datasci-001/wiki/view?page=aboutus" data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				About Us							</a>
+						</li>
+	
+	
+		<li class="course-navbar-item">
+		<a href="https://share.coursera.org/wiki/index.php/datasci:Main" target="_blank" class="coursera-university-color" title="Open course wiki in new window">
+			Course Wiki
+			<span class="icon-share"></span>
+		</a>
+	</li>
+		
+		<li class="course-navbar-item">
+		<a href="http://www.meetup.com/Coursera/" target="_blank" class="coursera-university-color">
+			Join a Meetup
+			<span class="icon-share"></span>
+		</a>
+	</li>
+	
+    </ul>
+
+<ul style="list-style-type:none;margin-left: 10px;">
+  <li><a href="http://help.coursera.org/" class="coursera-university-color" target="_blank" title="Open help articles in new window"><i class="icon-question-sign"></i> Help Articles</a></li>
+</ul>
+
+<ul style="list-style-type:none;margin-left: 10px;">
+	
+</ul>
+
+</div>
+            </div>
+            <div id="course-page-content" role="main">
+                                <h2 class="course-page-header">
+  <span>Database Assignment: Simple In-Database Text Analytics: Instructions</span>
+
+  <a class="coursera-reporter-link" title="Click here if you're experiencing technical problems or found errors in the course materials." target="_blank" href="https://class.coursera.org/datasci-001/class/reporter?url=http%3A%2F%2Fclass.coursera.org%2Fdatasci-001%2Fassignment%2Fview%3Fassignment_id%3D21&amp;area=programming&amp;title=Database+Assignment%3A+Simple+In-Database+Text+Analytics">
+     Help
+  </a>
+</h2>
+
+<br>
+<p>When you're ready to submit your solution, go to the <a href="https://class.coursera.org/datasci-001/assignment/list">assignments list</a>.
+</p>
+
+<br>
+<p>
+
+
+
+
+<title>Assignment 1 - Databases and Basic Text Analytics.docx</title>
+
+
+
+
+
+</p><div class="WordSection1">
+
+<p class="MsoNormal"><span style="font-size:10.0pt;mso-bidi-font-size:11.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Verdana;mso-bidi-font-family:Verdana">
+In the virtual machine, please open a Terminal to complete this assignment. The 
+relevant commands for this assignment are:
+</span></p><ul>
+<li>cd [directory name] : change directory to the given directory name</li>
+<li>ls : list files in the current directory </li>
+<li>sqlite3 reuters.db &lt; [SQL filename]: query reuters.db with the 
+given SQL file. Do not add "[" and "]" when executing the command. 
+(reuters.db and the SQL file must be in your current directory)</li>
+<li> tab will attempt to autocomplete any command or filename you are currently typing</li>
+<li> Extra Note: For Problem 2, you will use matrix.db instead of reuters.db</li>
+</ul>
+<p></p>
+<br>
+
+<p class="MsoNormal"><span style="font-size:14.0pt;mso-bidi-font-size:11.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Verdana;mso-bidi-font-family:Verdana">
+Before you start the assignment, please go to the git repository and get
+ the most recent course materials by issuing the following command: <strong>git pull</strong>
+</span></p>
+
+<p class="MsoNormal"><span style="font-size:10.0pt;mso-bidi-font-size:11.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Verdana;mso-bidi-font-family:Verdana">For most of these problems, you will use
+the </span><a href="https://github.com/uwescience/datasci_course_materials"><span class="SpellE"><span style="font-size:10.0pt;mso-bidi-font-size:11.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Verdana;mso-bidi-font-family:Verdana;color:#1155CC;background:white;mso-highlight:
+white">reuters.db</span></span></a><span style="font-size:10.0pt;mso-bidi-font-size:
+11.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Verdana;mso-bidi-font-family:Verdana"> database consisting of a single table:</span></p>
+
+<p class="MsoNormal"><span class="GramE"><span style="font-size:10.0pt;mso-bidi-font-size:
+11.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Verdana;mso-bidi-font-family:Verdana;color:#006000;background:white;mso-highlight:
+white">frequency(</span></span><span class="SpellE"><span style="font-size:10.0pt;
+mso-bidi-font-size:11.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Verdana;mso-bidi-font-family:Verdana;color:#006000;
+background:white;mso-highlight:white">docid</span></span><span style="font-size:10.0pt;mso-bidi-font-size:11.0pt;line-height:115%;font-family:
+&quot;Verdana&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:Verdana;mso-bidi-font-family:
+Verdana;color:#006000;background:white;mso-highlight:white">, term, count)</span></p>
+
+<p class="MsoNormal">Here, <span class="SpellE"><i style="mso-bidi-font-style:normal">docid</i></span>
+is an identifier corresponding to a particular file, <i style="mso-bidi-font-style:
+normal">term</i> is an English word, and <i style="mso-bidi-font-style:normal">count</i>
+is the number of the times the term appears within the document indicated by <span class="SpellE">docid</span>.</p>
+
+<p>Many questions ask you to turn in the number of records by a query.  
+The sqlite3 client does not report this information directly, so perhaps
+ the easiest way to get the answer is to write
+</p><pre>SELECT count(*) FROM (<your query="" here="">) x;
+</your></pre>
+
+(In SQLite, the alias "x" is not required, but in other dialects of SQL, it is.  So I've included it here.)
+<p></p>
+
+<h1><a name="h.g0f8qbt77nrx"></a>Problem 1: Inspecting the Reuters Dataset; Relational Algebra</h1>
+
+<p class="MsoNormal"><strong>(a) select:</strong> Write a query that is equivalent to the following
+relational algebra expression.</p>
+
+<span class="SpellE">σ</span><span class="GramE"><sub>docid=</sub></span><sub>10398_txt_earn</sub>(<span class="SpellE">frequency</span>)<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><p></p>
+
+<p class="MsoNormal"><span style="color:red">What to turn in: Run your 
+query against your local database and determine the number of records 
+returned as described above.  In your browser, turn in a text file, 
+select.txt, which states the number of records.</span></p>
+
+
+<p class="MsoNormal"><strong>(b) select project:</strong> Write a SQL statement that is equivalent to the following relational algebra expression.</p>
+
+
+<p>
+<span class="SpellE">π</span><span class="GramE"><sub>term</sub></span>(
+<span class="SpellE">σ</span><span class="GramE"><sub>docid=</sub></span><sub>10398_txt_earn and count=1</sub>(<span class="SpellE">frequency</span>))
+</p>
+
+<p class="MsoNormal"><span style="color:red">What to turn in: Run your 
+query against your local database and determine the number of records 
+returned as described above.  In your browser, turn in a text file, 
+select_project.txt, which states the number of records.</span></p>
+
+<p class="MsoNormal"><strong>(c) union:</strong> Write a SQL statement 
+that is equivalent to the following relational algebra expression. 
+(Hint: you can use the UNION keyword in SQL)</p> 
+
+<p>
+<span class="SpellE">π</span><span class="GramE"><sub>term</sub></span>(
+<span class="SpellE">σ</span><span class="GramE"><sub>docid=</sub></span><sub>10398_txt_earn and count=1</sub>(<span class="SpellE">frequency</span>)) U <span class="SpellE">π</span><span class="GramE"><sub>term</sub></span>(
+<span class="SpellE">σ</span><span class="GramE"><sub>docid=</sub></span><sub>925_txt_trade and count=1</sub>(<span class="SpellE">frequency</span>))
+</p>
+
+<p class="MsoNormal"><span style="color:red">What to turn in: Run your 
+query against your local database and determine the number of records 
+returned as described above.  In your browser, turn in a text file, 
+union.txt, which states the number of records.</span></p>
+
+<p class="MsoNormal"><strong>(d) count:</strong> Write a SQL statement to count the number of documents
+containing the word “parliament”</p>
+
+<p class="MsoNormal"><span style="color:red">What to turn in: Run your 
+query against your local database and determine the count returned as 
+described above.  In your browser, turn in a text file, count.txt, which
+ states the count.</span></p>
+
+<p class="MsoNormal"><strong>(e) big documents</strong> Write a SQL 
+statement to find all documents that have
+more than 300 total terms, including duplicate terms.  (Hint: You can 
+use the HAVING clause, or you can use a nested query.  Another hint: 
+Remember that the count column contains the term frequencies, and you 
+want to consider duplicates.) (<span class="SpellE">docid</span>, <span class="SpellE">term_count</span>)</p>
+
+
+<p class="MsoNormal"><span style="color:red">What to turn in: Run your 
+query against your local database and determine the number of records 
+returned as described above.  In your browser, turn in a text file, 
+big_documents.txt, which states the number of records.</span></p>
+
+
+<p class="MsoNormal"><strong>(f) two words:</strong> Write a SQL statement to count the number of unique documents that contain both the word 'transactions' and the word 'world'. </p>
+
+<p class="MsoNormal"><span style="color:red">What to turn in: Run your 
+query against your local database and determine the number of records 
+returned as described above.  In your browser, turn in a text file, 
+two_words.txt, which states the number of records.</span></p>
+
+<h1><a name="h.dzwqz3nlpwu0"></a>Problem 2: Matrix Multiplication in SQL</h1>
+
+<p class="MsoNormal"><span style="font-size:10.0pt;mso-bidi-font-size:11.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Verdana;mso-bidi-font-family:Verdana;color:#333333;background:white;mso-highlight:
+white">Recall from lecture that a <i style="mso-bidi-font-style:normal">sparse</i>
+matrix has many positions with a value of zero. <span style="mso-spacerun:yes">&nbsp;</span></span></p>
+
+
+<p class="MsoNormal"><span style="font-size:10.0pt;mso-bidi-font-size:11.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Verdana;mso-bidi-font-family:Verdana;color:#333333;background:white;mso-highlight:
+white">Systems designed to efficiently support sparse matrices look a lot like
+databases: They represent each cell as a record (<span class="SpellE">i<span class="GramE">,j,value</span></span>).<span style="mso-spacerun:yes">&nbsp; </span></span></p>
+
+
+<p class="MsoNormal"><span style="font-size:10.0pt;mso-bidi-font-size:11.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Verdana;mso-bidi-font-family:Verdana;color:#333333;background:white;mso-highlight:
+white">The benefit is that you only need one record for every non-zero element
+of a matrix.</span></p>
+
+
+<p class="MsoNormal"><span style="font-size:10.0pt;mso-bidi-font-size:11.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Verdana;mso-bidi-font-family:Verdana;color:#333333;background:white;mso-highlight:
+white">For example, the matrix</span></p>
+
+
+<table class="MsoNormalTable" style="margin-left:3.1pt;border-collapse:collapse;mso-table-layout-alt:fixed;
+ border:none;mso-border-alt:solid black 1.0pt;mso-padding-alt:0in .5pt 0in .5pt;
+ mso-border-insideh:1.0pt solid black;mso-border-insidev:1.0pt solid black" border="1" cellpadding="0" cellspacing="0" width="144">
+ <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
+  <td style="width:.5in;border:solid black 1.0pt;
+  padding:.05in .05in .05in .05in" valign="top" width="48"><p class="MsoNormal" style="text-align:center;line-height:normal" align="center"><span style="font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+  mso-fareast-font-family:Verdana;mso-bidi-font-family:Verdana;color:#333333;
+  background:white;mso-highlight:white">0</span></p>
+  </td>
+  <td style="width:.5in;border:solid black 1.0pt;
+  border-left:none;mso-border-left-alt:solid black 1.0pt;padding:.05in .05in .05in .05in" valign="top" width="48">
+  <p class="MsoNormal" style="text-align:center;line-height:normal" align="center"><span style="font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+  mso-fareast-font-family:Verdana;mso-bidi-font-family:Verdana;color:#333333;
+  background:white;mso-highlight:white">2</span></p>
+  </td>
+  <td style="width:.5in;border:solid black 1.0pt;
+  border-left:none;mso-border-left-alt:solid black 1.0pt;padding:.05in .05in .05in .05in" valign="top" width="48">
+  <p class="MsoNormal" style="text-align:center;line-height:normal" align="center"><span style="font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+  mso-fareast-font-family:Verdana;mso-bidi-font-family:Verdana;color:#333333;
+  background:white;mso-highlight:white">-1</span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:1">
+  <td style="width:.5in;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black 1.0pt;padding:.05in .05in .05in .05in" valign="top" width="48">
+  <p class="MsoNormal" style="text-align:center;line-height:normal" align="center"><span style="font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+  mso-fareast-font-family:Verdana;mso-bidi-font-family:Verdana;color:#333333;
+  background:white;mso-highlight:white">1</span></p>
+  </td>
+  <td style="width:.5in;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black 1.0pt;mso-border-left-alt:solid black 1.0pt;padding:.05in .05in .05in .05in" valign="top" width="48">
+  <p class="MsoNormal" style="text-align:center;line-height:normal" align="center"><span style="font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+  mso-fareast-font-family:Verdana;mso-bidi-font-family:Verdana;color:#333333;
+  background:white;mso-highlight:white">0</span></p>
+  </td>
+  <td style="width:.5in;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black 1.0pt;mso-border-left-alt:solid black 1.0pt;padding:.05in .05in .05in .05in" valign="top" width="48">
+  <p class="MsoNormal" style="text-align:center;line-height:normal" align="center"><span style="font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+  mso-fareast-font-family:Verdana;mso-bidi-font-family:Verdana;color:#333333;
+  background:white;mso-highlight:white">0</span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:2">
+  <td style="width:.5in;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black 1.0pt;padding:.05in .05in .05in .05in" valign="top" width="48">
+  <p class="MsoNormal" style="text-align:center;line-height:normal" align="center"><span style="font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+  mso-fareast-font-family:Verdana;mso-bidi-font-family:Verdana;color:#333333;
+  background:white;mso-highlight:white">0</span></p>
+  </td>
+  <td style="width:.5in;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black 1.0pt;mso-border-left-alt:solid black 1.0pt;padding:.05in .05in .05in .05in" valign="top" width="48">
+  <p class="MsoNormal" style="text-align:center;line-height:normal" align="center"><span style="font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+  mso-fareast-font-family:Verdana;mso-bidi-font-family:Verdana;color:#333333;
+  background:white;mso-highlight:white">0</span></p>
+  </td>
+  <td style="width:.5in;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black 1.0pt;mso-border-left-alt:solid black 1.0pt;padding:.05in .05in .05in .05in" valign="top" width="48">
+  <p class="MsoNormal" style="text-align:center;line-height:normal" align="center"><span style="font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+  mso-fareast-font-family:Verdana;mso-bidi-font-family:Verdana;color:#333333;
+  background:white;mso-highlight:white">-3</span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:3;mso-yfti-lastrow:yes">
+  <td style="width:.5in;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black 1.0pt;padding:.05in .05in .05in .05in" valign="top" width="48">
+  <p class="MsoNormal" style="text-align:center;line-height:normal" align="center"><span style="font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+  mso-fareast-font-family:Verdana;mso-bidi-font-family:Verdana;color:#333333;
+  background:white;mso-highlight:white">0</span></p>
+  </td>
+  <td style="width:.5in;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black 1.0pt;mso-border-left-alt:solid black 1.0pt;padding:.05in .05in .05in .05in" valign="top" width="48">
+  <p class="MsoNormal" style="text-align:center;line-height:normal" align="center"><span style="font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+  mso-fareast-font-family:Verdana;mso-bidi-font-family:Verdana;color:#333333;
+  background:white;mso-highlight:white">0</span></p>
+  </td>
+  <td style="width:.5in;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black 1.0pt;mso-border-left-alt:solid black 1.0pt;padding:.05in .05in .05in .05in" valign="top" width="48">
+  <p class="MsoNormal" style="text-align:center;line-height:normal" align="center"><span style="font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+  mso-fareast-font-family:Verdana;mso-bidi-font-family:Verdana;color:#333333;
+  background:white;mso-highlight:white">0</span></p>
+  </td>
+ </tr>
+</tbody></table>
+
+
+
+<p class="MsoNormal"><span class="GramE"><span style="font-size:10.0pt;mso-bidi-font-size:
+11.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Verdana;mso-bidi-font-family:Verdana;color:#333333;background:white;mso-highlight:
+white">can</span></span><span style="font-size:10.0pt;mso-bidi-font-size:11.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Verdana;mso-bidi-font-family:Verdana;color:#333333;background:white;mso-highlight:
+white"> be represented as a table</span></p>
+
+
+<table border="1" cellpadding="3" cellspacing="0" width="300">
+<tbody><tr>
+<td align="center" width="50%">
+row #
+</td>
+<td align="center" width="50%">
+column #
+</td>
+<td align="center" width="50%">
+value
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+0
+</td>
+<td align="center" width="50%">
+1
+</td>
+<td align="center" width="50%">
+2
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+0
+</td>
+<td align="center" width="50%">
+2
+</td>
+<td align="center" width="50%">
+-1
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+1
+</td>
+<td align="center" width="50%">
+0
+</td>
+<td align="center" width="50%">
+1
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+2
+</td>
+<td align="center" width="50%">
+2
+</td>
+<td align="center" width="50%">
+-3
+</td>
+</tr>
+</tbody></table>
+
+
+<p class="MsoNormal"><span style="font-size:10.0pt;mso-bidi-font-size:11.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Verdana;mso-bidi-font-family:Verdana;color:#333333;background:white;mso-highlight:
+white">Take a minute to make sure you understand how to convert back and forth
+between these two representations.</span></p>
+
+<p class="MsoNormal"><span style="font-size:10.0pt;mso-bidi-font-size:11.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Verdana;mso-bidi-font-family:Verdana;color:#333333;background:white;mso-highlight:
+white">Now, since you can represent a sparse matrix as a table, it’s reasonable
+to consider whether you can express matrix multiplication as a SQL query and
+whether it makes sense to do so.</span></p>
+
+
+<p class="MsoNormal"><span style="font-size:10.0pt;mso-bidi-font-size:11.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Verdana;mso-bidi-font-family:Verdana;color:#333333;background:white;mso-highlight:
+white">Within </span><a href="https://github.com/uwescience/datasci_course_materials"><span class="SpellE"><span style="font-size:10.0pt;mso-bidi-font-size:11.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Verdana;mso-bidi-font-family:Verdana;color:#1155CC;background:white;mso-highlight:
+white">matrix.db</span></span></a><span style="font-size:10.0pt;mso-bidi-font-size:
+11.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Verdana;mso-bidi-font-family:Verdana;color:#333333;background:white;mso-highlight:
+white">, there are two matrices A and B represented as follows:</span></p>
+
+
+<p class="MsoNormal"><span class="GramE"><span style="font-size:10.0pt;mso-bidi-font-size:
+11.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Verdana;mso-bidi-font-family:Verdana;color:#006000;background:white;mso-highlight:
+white">A(</span></span><span class="SpellE"><span style="font-size:10.0pt;
+mso-bidi-font-size:11.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Verdana;mso-bidi-font-family:Verdana;color:#006000;
+background:white;mso-highlight:white">row_num</span></span><span style="font-size:10.0pt;mso-bidi-font-size:11.0pt;line-height:115%;font-family:
+&quot;Verdana&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:Verdana;mso-bidi-font-family:
+Verdana;color:#006000;background:white;mso-highlight:white">, <span class="SpellE">col_num</span>, value)</span></p>
+
+<p class="MsoNormal"><span class="GramE"><span style="font-size:10.0pt;mso-bidi-font-size:
+11.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Verdana;mso-bidi-font-family:Verdana;color:#006000;background:white;mso-highlight:
+white">B(</span></span><span class="SpellE"><span style="font-size:10.0pt;
+mso-bidi-font-size:11.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Verdana;mso-bidi-font-family:Verdana;color:#006000;
+background:white;mso-highlight:white">row_num</span></span><span style="font-size:10.0pt;mso-bidi-font-size:11.0pt;line-height:115%;font-family:
+&quot;Verdana&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:Verdana;mso-bidi-font-family:
+Verdana;color:#006000;background:white;mso-highlight:white">, <span class="SpellE">col_num</span>, value)</span></p>
+
+
+<p class="MsoNormal"><span style="font-size:10.0pt;mso-bidi-font-size:11.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Verdana;mso-bidi-font-family:Verdana;color:#333333;background:white;mso-highlight:
+white">The matrix A and matrix B are both square matrices with 5 rows and 5 columns.</span></p>
+
+
+<p class="MsoNormal"><strong>(g) multiply:</strong> Express A X B as a SQL query, referring to the
+class lecture for hints.</p>
+
+
+<p class="MsoNormal"><span style="font-size:10.0pt;mso-bidi-font-size:11.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Verdana;mso-bidi-font-family:Verdana;color:red;background:white;mso-highlight:
+white">What to turn in: On the assignment site, turn in a text document, multiply.txt, which is value of the cell (2,3)</span></p>
+
+<p class="MsoNormal"><span style="font-size:10.0pt;mso-bidi-font-size:11.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Verdana;mso-bidi-font-family:Verdana;background:white;mso-highlight:white">If
+you’re wondering why this might be a good idea, consider that advanced
+databases execute queries in parallel automatically.<span style="mso-spacerun:yes">&nbsp; </span>So it can be quite efficient to process a
+very large sparse matrix in a database (millions of rows and columns)!<span style="mso-spacerun:yes">&nbsp; </span></span></p>
+
+
+<p class="MsoNormal"><span style="font-size:10.0pt;mso-bidi-font-size:11.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Verdana;mso-bidi-font-family:Verdana;background:white;mso-highlight:white">But
+a word of warning: In a job interview, don’t tell them you recommend
+implementing linear algebra in a database.<span style="mso-spacerun:yes">&nbsp;
+</span>You won’t be wrong, but they won’t understand databases as well as you
+now do, and therefore won’t understand when this is a good idea.<span style="mso-spacerun:yes">&nbsp; </span>Just say you have done some experiments using
+databases for analytics, then mention the papers in the reading if they seem incredulous!</span></p>
+
+
+<h1><a name="h.g0f8qbt77nrx"></a>Problem 3: Working with a Term-Document Matrix</h1>
+
+<p class="MsoNormal"><span style="font-size:10.0pt;mso-bidi-font-size:11.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Verdana;mso-bidi-font-family:Verdana;background:white;mso-highlight:white">The reuters dataset can be considered a <em>term-document matrix</em>, which is an important representation for text analytics.</span></p>
+
+
+<p class="MsoNormal"><span style="font-size:10.0pt;mso-bidi-font-size:11.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Verdana;mso-bidi-font-family:Verdana;background:white;mso-highlight:white">Each row of the matrix is a <em>document vector</em>,
+ with one column for every term in the entire corpus.  Naturally, some 
+documents may not contain a given term, so this matrix is sparse.  The 
+value in each cell of the matrix is the term frequency.  (You'd often 
+want this this value to be a weighted term frequency, typically using 
+tf-idf -- term frequency-inverse document frequency.  But we'll stick 
+with the raw frequency.)
+</span></p>
+
+
+<p class="MsoNormal"><span style="font-size:10.0pt;mso-bidi-font-size:11.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Verdana;mso-bidi-font-family:Verdana;background:white;mso-highlight:white">
+What can you do with the term-document matrix <em>D</em>? One thing you can do is compute the similarity of documents.  Just multiply the matrix with its own transpose <em>S = DD<sup>T</sup></em>, and you have an (unnormalized) measure of similarity. </span></p>
+
+
+<p class="MsoNormal">The result is a square document-document matrix, 
+where each cell represents the similarity.  Here, similarity is pretty 
+simple: if two documents both contain a term, then the score goes up by 
+the product of the two term frequencies.  This score is equivalent to 
+the dot product of the two document vectors.  </p>
+
+
+<p class="MsoNormal">To normalize this score to the range 0-1 and to account for relative term frequencies, the <em>cosine similarity</em>
+ is perhaps more useful.  The cosine similarity is a measure of the 
+angle between the two document vectors, normalized by magnitude.  You 
+just divide the dot product by the magnitude of the two vectors.  
+However, we would need a power function (x^2, x^(1/2)) to compute the 
+magnitude, and sqlite has <a href="http://www.sqlite.org/lang_corefunc.html">built-in support for only very basic mathematical functions</a><a>.  It is not hard to </a><a href="https://www.google.com/search?q=math+function+extensions+sqlite">extend sqlite to add what you need</a>, but we won't be doing that in this assignment.
+</p>
+
+<p class="MsoNormal"><strong>(h) similarity matrix:</strong> Write a query to compute the similarity matrix <em>DD<sup>T</sup></em>.
+ (Hint: The transpose is trivial -- just join on columns to columns 
+instead of columns to rows.)  The query could take some time to run if 
+you compute the entire result.  But notice that you don't need to 
+compute the similarity of both (doc1, doc2) and (doc2, doc1) -- they are
+ the same, since similarity is symmetric.  If you wish, you can avoid 
+this wasted work by adding a condition of the form a.docid &lt; b.docid 
+to your query.  (But the query still won't return immediately if you try
+ to compute every result.)</p>
+
+<p class="MsoNormal"><span style="font-size:10.0pt;mso-bidi-font-size:11.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Verdana;mso-bidi-font-family:Verdana;color:red;background:white;mso-highlight:
+white">What to turn in: On the assignment website, turn in a text 
+document, similarity_matrix.txt, which has the similarity of the two 
+documents '10080_txt_crude' and '17035_txt_earn'.</span></p>
+
+<p class="MsoNormal"><span style="font-size:10.0pt;mso-bidi-font-size:11.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Verdana;mso-bidi-font-family:Verdana;background:white;mso-highlight:white">
+You can also use this similarity metric to implement some primitive 
+search capabilities.  Consider a keyword query: It's a bag of words, 
+just like a document (typically a keyword query will have far fewer 
+terms than a document, but that's ok). </span></p>
+
+<p class="MsoNormal">So if we can compute the similarity of two 
+documents, we can compute the similarity of a query with a document.  
+You can imagine taking the union of the keywords represented as a small 
+set of (docid, term, count) tuples with the set of all documents in the 
+corpus, then recomputing the similarity matrix and returning the top 10 
+highest scoring documents.
+</p>
+
+<p class="MsoNormal"><strong>(i) keyword search:</strong> Find the best 
+matching document to the keyword query "washington taxes treasury".  You
+ can add this set of keywords to the document corpus with a union of 
+scalar queries: 
+</p><pre>SELECT * FROM frequency
+UNION
+SELECT 'q' as docid, 'washington' as term, 1 as count 
+UNION
+SELECT 'q' as docid, 'taxes' as term, 1 as count
+UNION 
+SELECT 'q' as docid, 'treasury' as term, 1 as count
+</pre>
+
+Then, compute the similarity matrix again, but filter for only 
+similarities involving the "query document": docid = 'q'.  Consider 
+creating a view of this new corpus to simplify things.
+<p></p>
+
+<p class="MsoNormal"><span style="font-size:10.0pt;mso-bidi-font-size:11.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Verdana;mso-bidi-font-family:Verdana;color:red;background:white;mso-highlight:
+white">What to turn in: On the assignment website, turn in a text 
+document, keyword_search.txt, with the maximum similarity score between 
+the query and any document.  Your query should return a list of (docid, 
+similarity) pairs, but you will submit only a single number: the highest
+ score in the list.</span></p>
+
+
+</div>
+
+
+
+<p></p>
+
+            </div>
+        </div>
+    </div>
+        
+    
+    <script src="Assignment%20Details%20%7C%20Introduction%20to%20Data%20Science_files/204.js" async="" type="text/javascript"></script><script src="Assignment%20Details%20%7C%20Introduction%20to%20Data%20Science_files/ga.js" async="" type="text/javascript"></script><script src="Assignment%20Details%20%7C%20Introduction%20to%20Data%20Science_files/spark.js"></script>
+
+<script type="text/javascript">
+    // SET UP THE MULTITRACKER
+        window.logger = window.Log({level:"error"});
+        var parts = location.host.split(".");
+    while(parts.length > 2) { parts.shift(); }
+
+    window.multitracker = window.MultiTracker({logger:window.logger});
+    window.multitracker.register('204', window._204 = window._204 || []);
+    window.multitracker.register('ga', window._gaq = window._gaq || [], 'google');
+
+    // SET UP GA and 204
+    window._gaq.push(['_setAccount', 'UA-28377374-1']);
+    window._gaq.push(['_setDomainName', 'coursera.org']);
+    window._gaq.push(['_setAllowLinker', true]);  
+    window._gaq.push(['_trackPageview']);
+    
+    window._204.push({key:"pageview", val:{}});
+    window._204.push(["client", "spark"]);
+    window._204.push(["user", 3397025]);
+    window._204.push(["domain", "." + parts.join(".")]);
+
+    // override our multitracker queues with the ga queue when it is ready
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    
+      ga.onload = ga.onreadystatechange = function() {
+          ga.onreadystatechange = ga.onload = null;
+          window.multitracker.get('ga').queue = window._gaq;
+      };
+    })();
+
+    // override our multitracker queues with the 204 queue when it is ready
+    (function() {
+      var a = document.createElement('script'); a.type = 'text/javascript'; a.async = true;
+      a.src = 'https://eventing.coursera.org/204.min.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(a, s);
+      a.onload = a.onreadystatechange = function() {
+          a.onreadystatechange = a.onload = null;
+          window.multitracker.get('204').queue = window._204;
+      };
+    })();
+</script>
+
+<script>
+  // Set up shared AB testing object
+  (function() {
+    window.ab = {};
+
+    // we want to share the 204 session cookie with the AB session cookie...
+    var sessionId = AB.makeSession("__204u", {expires:356, domain:"." + location.host});
+        var debug = true;
+    
+    window.ab.user = window.AB(3397025, "user", {debug:debug, tracker:window.multitracker, logger:window.logger});
+    window.ab.session = window.AB(sessionId, "session", {debug:debug, tracker:window.multitracker, logger:window.logger});
+
+    if(window.CourseraABExperiments.user) {
+        window.ab.user.addExperiments(window.CourseraABExperiments.user);
+        window.ab.user.runExperimentsOn("body");
+    }
+
+    if(window.CourseraABExperiments.session) {
+        window.ab.session.addExperiments(window.CourseraABExperiments.session);
+        window.ab.session.runExperimentsOn("body");
+    }
+  })();
+</script>
+
+
+    <script>
+      // Set up help widget
+      (function() {
+        $("[data-helpwidget]").each(function() {
+            window.HelpWidget(this, {tracker: window.multitracker});
+        });
+       })();
+ 
+        $("[data-readme]").each(function() {
+            window.ReadMe(this);
+        });
+    </script>
+
+    <script src="Assignment%20Details%20%7C%20Introduction%20to%20Data%20Science_files/modal_focus.js" type="text/javascript"></script>
+    <script src="Assignment%20Details%20%7C%20Introduction%20to%20Data%20Science_files/get_query_parameters.js" type="text/javascript"></script>
+    <script src="Assignment%20Details%20%7C%20Introduction%20to%20Data%20Science_files/signature_track.js" type="text/javascript"></script>
+    <script src="Assignment%20Details%20%7C%20Introduction%20to%20Data%20Science_files/item_list.js" type="text/javascript"></script>
+    <script src="Assignment%20Details%20%7C%20Introduction%20to%20Data%20Science_files/navbar.js" type="text/javascript"></script>
+
+    
+    <script>
+     // Set up help widget
+      (function() {
+        $("[data-helpwidget]").each(function() {
+            window.HelpWidget(this, {tracker: window.multitracker});
+        });
+       })();
+    </script>
+
+    
+    <script type="text/x-mathjax-config;executed=true">
+MathJax.Hub.Config({
+  config: ["MMLorHTML.js"],
+  
+  styleSheets: [],
+  styles: {},
+
+  jax: ["input/TeX"],
+  
+  extensions: ["tex2jax.js"],
+
+  preJax: null,
+  postJax: null,
+
+  preRemoveClass: "MathJax_Preview",
+
+  showProcessingMessages: true,
+
+  messageStyle: "none",
+  
+  displayAlign: "center",
+  displayIndent: "0em",
+  
+  delayStartupUntil: "none",
+
+  skipStartupTypeset: false,
+  
+  elements: [],
+  
+  tex2jax: {
+	    inlineMath: [
+	                 ['$$','$$'],      // uncomment this for standard TeX math delimiters
+	                 ['\\(','\\)']
+	                 ],
+
+	                 displayMath: [
+	                 ['\\[','\\]']
+	                 ],
+
+    skipTags: ["script","noscript","style","textarea","pre","code"],
+    ignoreClass: "tex2jax_ignore",
+    processClass: "tex2jax_process",
+    processEscapes: false,
+    processEnvironments: true,
+    preview: "TeX"
+    
+  },
+  
+  mml2jax: {
+    preview: "alttext"
+    
+  },
+  
+  jsMath2jax: {
+    preview: "TeX"
+    
+  },
+
+  TeX: {
+    TagSide: "right",
+    TagIndent: ".8em",
+    MultLineWidth: "85%",
+    Macros: {},
+
+    extensions: ["AMSmath.js", "AMSsymbols.js"]
+    
+  },
+
+  //============================================================================
+  //
+  //  These parameters control the MathML inupt jax.
+  //
+  MathML: {
+    //
+    //  This specifies whether to use TeX spacing or MathML spacing when the
+    //  HTML-CSS output jax is used.
+    //
+    useMathMLspacing: false
+  },
+  
+  //============================================================================
+  //
+  //  These parameters control the HTML-CSS output jax.
+  //
+  "HTML-CSS": {
+    
+    scale: 100,
+    
+    availableFonts: ["STIX","TeX"],
+    
+    preferredFont: "TeX",
+    
+    webFont: "TeX",
+    
+    imageFont: "TeX",
+    
+    undefinedFamily: "STIXGeneral,'Arial Unicode MS',serif",
+      
+    showMathMenu: true,
+
+    styles: {},
+    
+    tooltip: {
+      delayPost: 600,          // milliseconds delay before tooltip is posted after mouseover
+      delayClear: 600,         // milliseconds delay before tooltip is cleared after mouseout
+      offsetX: 10, offsetY: 5  // pixels to offset tooltip from mouse position
+    }
+  },
+  
+  //============================================================================
+  //
+  //  These parameters control the NativeMML output jax.
+  //
+  NativeMML: {
+
+    scale: 100,
+
+    showMathMenu: true,
+    showMathMenuMSIE: true,
+
+    styles: {}
+  },
+  
+  MathMenu: {
+    delay: 400,
+    
+    helpURL: "http://www.mathjax.org/help/user/",
+
+    showRenderer: true,
+    showFontMenu: false,
+    showContext:  false,
+
+    windowSettings: {
+      status: "no", toolbar: "no", locationbar: "no", menubar: "no",
+      directories: "no", personalbar: "no", resizable: "yes", scrollbars: "yes",
+      width: 100, height: 50
+    },
+    
+    styles: {}
+    
+  },
+
+  MMLorHTML: {
+    prefer: {
+      MSIE:    "MML",
+      Firefox: "MML",
+      Opera:   "HTML",
+      other:   "HTML"
+    }
+  }
+});
+</script>
+<script type="text/javascript">
+(function () {
+
+  function loadMathJax() {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://duqnjvq4jwr55.cloudfront.net/2.1/MathJax.js";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  }
+
+  window.loadOrRefreshMathJax = function(domId) {
+    if (window.MathJax) {
+      if (domId) {
+        MathJax.Hub.Queue(["Typeset", MathJax.Hub, domId]);
+      } else {
+        MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+      }
+    } else {
+      loadMathJax();
+    }
+  }
+})();
+</script>
+    <script type="text/javascript">
+        var site_base_url = "https:\/\/www.coursera.org\/";
+        var site_static_asset_url = "https:\/\/dt5zaw6a98blc.cloudfront.net\/site-static\/";
+        var spark_class_short_name = "datasci";
+        var spark_class_id = 346;
+        var spark_class_url = "\/datasci-001";
+        var spark_signature_url = "https:\/\/class.coursera.org\/datasci-001\/signature\/";
+        
+        var course_strings_name = "Introduction to Data Science";
+        var student_full_name = "Eloy D\u00edaz \u00c1lvarez";
+    </script>
+
+    
+<script type="text/javascript">$(function() { loadOrRefreshMathJax();})</script>
+
+
+
+
+</body></html>

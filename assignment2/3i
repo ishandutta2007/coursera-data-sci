@@ -1,0 +1,16 @@
+CREATE TEMP VIEW QUERY AS
+SELECT * FROM frequency
+UNION
+SELECT 'q' as docid, 'washington' as term, 1 as count 
+UNION
+SELECT 'q' as docid, 'taxes' as term, 1 as count
+UNION 
+SELECT 'q' as docid, 'treasury' as term, 1 as count;
+
+SELECT doc1, doc2, SUM(count) AS score FROM
+(SELECT A.docid AS doc1, B.docid AS doc2, A.count * B.count AS count
+FROM QUERY AS A 
+JOIN QUERY AS B
+ON A.term = B.term AND A.docid='q')
+GROUP BY doc1, doc2
+ORDER BY score;

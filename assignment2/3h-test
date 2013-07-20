@@ -1,0 +1,2 @@
+SELECT docid, term, count FROM frequency 
+WHERE docid='10080_txt_crude' OR docid='17035_txt_earn';

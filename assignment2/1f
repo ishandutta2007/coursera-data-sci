@@ -1,0 +1,9 @@
+SELECT * 
+FROM 
+(SELECT docid,term 
+FROM frequency
+WHERE term="transaction") T JOIN
+(SELECT docid,term
+FROM frequency
+WHERE term="world") W 
+ON T.docid=W.docid;

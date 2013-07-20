@@ -1,0 +1,1724 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Assignment Details | Introduction to Data Science</title>
+<link rel="stylesheet" href="Assignment%20Details%20%7C%20Introduction%20to%20Data%20Science_files/spark.css">
+<link rel="stylesheet" href="Assignment%20Details%20%7C%20Introduction%20to%20Data%20Science_files/course.css">
+<link rel="icon" href="https://spark-public.s3.amazonaws.com/datasci/static/images/favicon.ico">
+<script src="Assignment%20Details%20%7C%20Introduction%20to%20Data%20Science_files/MathJax.js" type="text/javascript"></script><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1px; bottom: 2px; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuTitle {background-color: #CCCCCC; margin: -5px 0 0 0; text-align: center; font-style: italic; font-size: 80%; color: #444444; padding: 2px 0; overflow: hidden}
+.MathJax_MenuArrow {position: absolute; right: .5em; color: #666666}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_Menu_Close {position: absolute; width: 31px; height: 31px; top: -15px; left: -15px}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style></head>
+
+<body bgcolor="white" lang="EN-US"><div style="display: none;" id="MathJax_Message"></div>
+    
+    <a href="#course-page-content" class="hidden">Skip Navigation</a>
+    <div class="hidden">
+        This page features MathJax technology to render mathematical formulae.
+        If you are using a screen reader, please visit <a href="http://www.dessci.com/en/products/mathplayer/">MathPlayer</a> to download the plugin for your browser. Please note that this is an Internet Explorer-only plugin at this time.
+    </div>
+
+    <h1 class="hidden">Introduction to Data Science</h1>
+
+    
+
+<div class="course-topbar container-fluid" role="banner">
+
+    <div class="row-fluid">
+        
+        <div class="span3">
+          <a href="https://www.coursera.org/" class="course-topbar-logo" data-if-linkable="add-referrer"></a>
+        </div>
+
+        <div class="course-topbar-nav-container span9" style="float:right;">
+            <h2 class="hidden">Top Navigation Bar</h2>
+
+            <ul class="course-topbar-nav-list">
+                <li class="course-topbar-nav-list-item">
+                  <a href="https://www.coursera.org/courses" data-if-linkable="add-referrer">Courses</a>
+                </li>
+
+                                
+                <li class="course-topbar-nav-list-item" tabindex="0" role="button" aria-haspopup="true" aria-expanded="false" aria-owns="course-topbar-my" data-popup="#course-topbar-my" data-popup-bind-open="mouseenter" data-popup-close="" style="cursor:pointer;" data-popup-direction="se">
+                                        <a data-user-id="3397025">  
+                        Eloy Díaz Álvarez 
+                        <i class="icon-caret-down"></i>
+                    </a>
+                </li>
+               
+                            </ul>
+        </div>
+    </div>
+
+    <div id="course-topbar-aboutus" class="course-topbar-sublist">
+        <a class="course-topbar-sublist-item" href="https://www.coursera.org/about/jobs" target="_new" data-if-linkable="add-referrer">Jobs</a>
+        <a class="course-topbar-sublist-item" href="https://www.coursera.org/about/team" target="_new" data-if-linkable="add-referrer">Team</a>
+        <a class="course-topbar-sublist-item" href="https://www.coursera.org/about/contact" target="_new" data-if-linkable="add-referrer">Contact Us</a>
+        <a class="course-topbar-sublist-item" href="https://www.coursera.org/about/" target="_new" data-if-linkable="add-referrer">About Us</a>
+    </div>
+
+    <div id="course-topbar-my" class="course-topbar-sublist">
+        <a class="course-topbar-sublist-item" href="https://www.coursera.org/" target="_new">Courses</a>
+        <a class="course-topbar-sublist-item" href="https://www.coursera.org/account/profile" target="_new">Profile</a>
+        <a class="course-topbar-sublist-item" href="https://www.coursera.org/account/records" target="_new">Course Records</a>
+        <a class="course-topbar-sublist-item" href="https://www.coursera.org/account/settings" target="_new">Settings</a>
+        <a class="course-topbar-sublist-item" href="https://class.coursera.org/datasci-001/class/preferences">Course Preferences</a>
+        <a class="course-topbar-sublist-item" href="https://class.coursera.org/datasci-001/auth/logout">Sign Out</a>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+<style type="text/css">
+ 
+
+
+</style>
+<div class="course-topbanner">
+  <div class="course-topbanner-university-logo">
+    <a href="https://www.coursera.org/uw" class="coursera-university-color" target="_blank" data-if-linkable="add-referrer" title="https://www.coursera.org/uw">
+      <img src="Assignment%20Details%20%7C%20Introduction%20to%20Data%20Science_files/university_logo.png" alt="uw">
+    </a>
+  </div>
+
+  
+  <h1 class="course-topbanner-header">
+      <a class="course-topbanner-name coursera-university-color" href="https://class.coursera.org/datasci-001/class/index" data-if-linkable="modal-lock">
+        Introduction to Data Science      </a>
+      <br>
+      <span class="course-topbanner-instructor" style="">
+        by  Bill  Howe      </span>
+  </h1>
+</div>
+    
+        <div class="container-fluid" style="position:relative;">
+        <div class="row-fluid">
+            <div id="course-page-sidebar" role="navigation">
+                <div class="course-navbar-container">
+	<a href="https://class.coursera.org/datasci-001/class/index">
+	<img src="Assignment%20Details%20%7C%20Introduction%20to%20Data%20Science_files/logo.png" style="width: 205px;height: 116px;margin: -15px 0px 8px 1px; box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);" alt="Course Home Page">
+	</a>
+
+
+<h2 class="hidden">Side Navigation Bar</h2>
+<ul class="course-navbar-list">
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/datasci-001/class/index" data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Home							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/datasci-001/lecture/index" data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Video Lectures							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/datasci-001/forum/index" data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Discussion Forums							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								</li>
+	
+		
+	<li class="course-navbar-item active">
+								<a href="https://class.coursera.org/datasci-001/assignment/index" data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Programming Assignments							<span class="course-navbar-selected-marker">(selected)</span></a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/datasci-001/quiz/index" data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Quizzes							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/datasci-001/human_grading/index" data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Peer Assessments							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/datasci-001/wiki/view?page=OptionalRealWorldProject" data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Optional Real-World Project							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/datasci-001/wiki/view?page=syllabus" data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Syllabus							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/datasci-001/wiki/view?page=courselogistics" data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Course Logistics							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/datasci-001/wiki/view?page=tableau_aws" data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Running Tableau on AWS							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/datasci-001/wiki/view?page=ClassVirtualMachine" data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Class Virtual Machine							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/datasci-001/wiki/view?page=GithubInstructions" data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Github Instructions							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/datasci-001/wiki/view?page=PythonResources" data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Python Resources							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/datasci-001/wiki/view?page=awssetup" data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				AWS Setup							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/datasci-001/quiz/index?quiz_type=survey" data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Surveys							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/datasci-001/wiki/view?page=aboutus" data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				About Us							</a>
+						</li>
+	
+	
+		<li class="course-navbar-item">
+		<a href="https://share.coursera.org/wiki/index.php/datasci:Main" target="_blank" class="coursera-university-color" title="Open course wiki in new window">
+			Course Wiki
+			<span class="icon-share"></span>
+		</a>
+	</li>
+		
+		<li class="course-navbar-item">
+		<a href="http://www.meetup.com/Coursera/" target="_blank" class="coursera-university-color">
+			Join a Meetup
+			<span class="icon-share"></span>
+		</a>
+	</li>
+	
+    </ul>
+
+<ul style="list-style-type:none;margin-left: 10px;">
+  <li><a href="http://help.coursera.org/" class="coursera-university-color" target="_blank" title="Open help articles in new window"><i class="icon-question-sign"></i> Help Articles</a></li>
+</ul>
+
+<ul style="list-style-type:none;margin-left: 10px;">
+	
+</ul>
+
+</div>
+            </div>
+            <div id="course-page-content" role="main">
+                                <h2 class="course-page-header">
+  <span>Twitter Sentiment Analysis in Python: Instructions</span>
+
+  <a class="coursera-reporter-link" title="Click here if you're experiencing technical problems or found errors in the course materials." target="_blank" href="https://class.coursera.org/datasci-001/class/reporter?url=http%3A%2F%2Fclass.coursera.org%2Fdatasci-001%2Fassignment%2Fview%3Fassignment_id%3D3&amp;area=programming&amp;title=Twitter+Sentiment+Analysis+in+Python">
+     Help
+  </a>
+</h2>
+
+<br>
+<p>When you're ready to submit your solution, go to the <a href="https://class.coursera.org/datasci-001/assignment/list">assignments list</a>.
+</p>
+
+<br>
+<p>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Generator" content="Microsoft Word 14 (filtered)">
+<title>Assignment 2 - Twitter.docx</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Georgia;
+	panose-1:2 4 5 2 5 4 5 2 3 3;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Cambria","serif";
+	color:black;}
+h1
+	{margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:18.0pt;
+	font-family:"Arial","sans-serif";
+	color:black;}
+h2
+	{margin-top:.25in;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Arial","sans-serif";
+	color:black;}
+h3
+	{margin-top:14.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Arial","sans-serif";
+	color:#666666;}
+h4
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:2.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	color:#666666;
+	font-weight:normal;
+	font-style:italic;}
+h5
+	{margin-top:11.0pt;
+	margin-right:0in;
+	margin-bottom:2.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	color:#666666;}
+h6
+	{margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:2.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	color:#666666;
+	font-weight:normal;
+	font-style:italic;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:36.0pt;
+	font-family:"Arial","sans-serif";
+	color:black;
+	font-weight:bold;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{margin-top:.25in;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:24.0pt;
+	font-family:Georgia;
+	color:#666666;
+	font-style:italic;}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+
+
+
+
+</p><div class="WordSection1">
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">Twitter
+represents a fundamentally new instrument to make social measurements. Millions
+of people voluntarily express opinions across any topic imaginable --- this
+data source is incredibly valuable for both research and business.</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">For example,
+researchers have shown that the "mood" of communication on twitter </span><a href="http://www.google.com/url?q=http%3A%2F%2Fwww.nytimes.com%2F2011%2F09%2F30%2Fscience%2F30twitter.html&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNGr7ajoCRrNjXPo2MCXVDA7GPxO_w"><b><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#1155CC">reflects biological rhythms</span></b></a><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333"> and can even used to </span><a href="http://www.google.com/url?q=http%3A%2F%2Farxiv.org%2Fpdf%2F1010.3003%26embedded%3Dtrue&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNHD0-rerReKggzjChC8Gjb-q4wuyQ"><b><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#1155CC">predict the stock market</span></b></a><span style="font-size:
+10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">. A
+student here at UW used geocoded tweets to </span><a href="http://www.google.com/url?q=http%3A%2F%2Fcliffmass.blogspot.com%2F2012%2F07%2Fthunderstorm-fest.html&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNGV5Dg7rKm1udr9GlLAlTZpmhLOFQ"><b><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#1155CC">plot a map of locations where "thunder" was mentioned
+in the context of a storm system in Summer 2012.</span></b></a></p>
+
+<p class="MsoNormal" style="text-indent:.5in;line-height:115%"><a href="http://cliffmass.blogspot.com/2012/07/thunderstorm-fest.html"></a></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">Researchers
+from Northeastern University and Harvard University studying the
+characteristics and dynamics of Twitter </span><a href="http://www.google.com/url?q=http%3A%2F%2Fwww.ccs.neu.edu%2Fhome%2Famislove%2Ftwittermood%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNErViv28h9g0CYybxwCY_UkSqV_zQ"><b><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#1155CC">have an excellent resource</span></b></a><span style="font-size:
+10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333"> for
+learning more about this area.</span></p>
+
+<p class="MsoNormal" style="text-indent:.5in;line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">In this
+assignment, you will</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-left:.5in;text-indent:-17.95pt;line-height:
+115%"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">●<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">access the twitter Application Programming Interface(API) using
+python.</span></p>
+
+<p class="MsoNormal" style="margin-left:.5in;text-indent:-17.95pt;line-height:
+115%"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">●<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">estimate the public's perception (the sentiment) of a particular
+term or phrase.</span></p>
+
+<p class="MsoNormal" style="margin-left:.5in;text-indent:-17.95pt;line-height:
+115%"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">●<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">analyze the relationship between location and mood based on a
+sample of twitter data.</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">This
+assignment is open-ended in several ways. You'll need to make some decisions
+about how best to solve the problem.</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><b><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">It is
+perfectly acceptable to discuss your solution on the forum, but don't share
+code.</span></b></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><b><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">Each student
+must submit their own solution to the problem.</span></b></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><b><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">You will have an unlimited number of tries for each submission.</span></b></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333"><strong>Your
+ code will be run in a protected environment, so you should only use the
+ Python standard libraries unless you are specifically instructed 
+otherwise. Your code should also not rely on any external libraries or 
+web services.</strong></span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;</span></p>
+
+<h3><span style="font-size:15.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#583F6F;font-weight:normal">The Twitter Application Programming Interface</span></h3>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">Twitter
+provides a very rich REST API for querying the system, accessing data, and
+control your account. You can </span><a href="http://www.google.com/url?q=https%3A%2F%2Fdev.twitter.com%2Fdocs&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNEGATxP7of7u4Mz-To0QhXnzHw2XA"><b><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#1155CC">read more </span></b></a><a href="https://dev.twitter.com/docs"><b><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#1155CC">about </span></b></a><a href="http://www.google.com/url?q=https%3A%2F%2Fdev.twitter.com%2Fdocs&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNEGATxP7of7u4Mz-To0QhXnzHw2XA"><b><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#1155CC">the Twitter API</span></b></a><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">.</span></p>
+
+<h3><span style="font-size:15.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#583F6F;font-weight:normal">Python 2.7.3 environment</span></h3>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">If you are
+new to Python, you may find it valuable to work through the </span><a href="http://www.codecademy.com/tracks/python"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#1155CC">codeacademy
+Python tutorials</span></a><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">. Focus on tutorials 1-9,
+plus tutorial 12 on File IO.</span>
+<span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#1155CC">
+In addition, many students have recommended <a href="https://developers.google.com/edu/python/">Google's Python class.</a>
+</span>
+</p>
+
+
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">You will
+need to establish a Python programming environment to complete this
+assignment.&nbsp; You can install Python yourself by </span><a href="http://www.python.org/download/"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#1155CC">downloading
+it from the Python website</span></a><span style="font-size:10.0pt;line-height:
+115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">, or can use the </span><a href="https://spark-public.s3.amazonaws.com/datasci/Coursera-Data-Science-Ubuntu.ova"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#1155CC">class virtual machine</span></a><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">.&nbsp; </span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<h3><span style="font-size:15.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#583F6F;font-weight:normal">Unicode strings</span></h3>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">Strings in
+the twitter data prefixed with the letter "u" are unicode strings.
+For example:</span></p>
+
+<p class="MsoNormal" style="text-indent:.5in;line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="text-indent:.5in;line-height:115%"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">u"This is a string"</span></p>
+
+<p class="MsoNormal" style="text-indent:.5in;line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">Unicode is a
+standard for representing a much larger variety of characters beyond the roman
+alphabet (greek, russian, mathematical symbols, logograms from non-phonetic
+writing systems such as kanji, etc.) </span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">In most
+circumstances, you will be able to use a unicode object just like a string.</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">If you
+encounter an error involving printing unicode, you can use the </span><a href="http://docs.python.org/2/library/stdtypes.html#str.encode"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#1155CC">encode</span></a><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333"> method to properly print the
+international characters, like this:</span></p>
+
+<pre>unicode_string = u"aaaàçççñññ"
+encoded_string = unicode_string.encode('utf-8')
+print encoded_string
+</pre>
+
+<h3>Getting Started</h3>
+
+<p class="MsoNormal" style="line-height:115%">
+There's a <a href="https://class.coursera.org/datasci-001/lecture/55">video walkthrough of Problem 0 and Problem 1</a>
+ available.  If you are brand new to Python, or if you have trouble 
+getting the VM set up, or if the Twitter API is causing you trouble, 
+this video may help.
+</p>
+
+<p class="MsoNormal" style="line-height:115%">
+If you are new to Python, many students have recommended <a href="https://developers.google.com/edu/python/">Google's Python class.</a>
+</p>
+
+<h3><span style="font-size:15.0pt;line-height:115%;
+font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#583F6F;font-weight:normal">Problem 0: Query Twitter with Python</span></h3>
+
+If you are using the class virtual machine, run the VM, open a terminal window, and <a href="https://class.coursera.org/datasci-001/wiki/view?page=GithubInstructions">use git to make sure you have the latest class materials</a>.
+
+To edit the file in linux, you can use vi, emacs, or gedit.
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">Use the </span><a href="http://docs.python.org/2/library/urllib.html"><span style="font-size:
+10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#1155CC">urllib</span></a><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333"> and </span><a href="http://docs.python.org/2/library/json.html"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#1155CC">json</span></a><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333"> libraries in python to
+access the basic twitter search API and return JSON data. </span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">To retrieve
+recent tweets associated with the term “microsoft,” you use this url:</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;</span></p>
+
+<p class="MsoNormal" style="text-indent:.5in;line-height:115%"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">http://search.twitter.com/search.json?q=microsoft</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">To access
+this url in Python and parse the response, you can use the following snippet:</span></p>
+
+<pre>import urllib
+import json
+
+response = urllib.urlopen("http://search.twitter.com/search.json?q=microsoft")
+print json.load(response)
+</pre>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">The format
+of the result is <i>JSON</i>, which stands for JavaScript Object Notation. It
+is a simple format for representing nested structures of data --- lists of
+lists of dictionaries of lists of .... you get the idea.</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">As you might
+imagine, it is fairly straightforward to convert JSON data into a Python data
+structure. Indeed, there is a convenient library to do so, called json, which
+we will use.</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">Twitter
+provides only </span><a href="http://www.google.com/url?q=https%3A%2F%2Fdev.twitter.com%2Fdocs%2Fplatform-objects%2Ftweets&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNHBeFjTVk8gwD6YqU780ssQocg2Rg"><b><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#1155CC">partial documentation for understanding this data format</span></b></a><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">, but it's not difficult to deduce the structure.</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">Using this
+library, the json data is parsed and converted to a Python dictionary
+representing the entire result set. (If needed, take a moment to</span><a href="http://docs.python.org/2/library/stdtypes.html#typesmapping"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333;text-decoration:none"> </span></a><a href="http://docs.python.org/2/library/stdtypes.html#typesmapping"><b><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#1155CC">read the documentation for Python dictionaries</span></b></a><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">).&nbsp; The "results" key of this dictionary corresponds
+holds the actual tweets; each tweet is itself another dictionary.</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">a) Write a
+program, print.py, to print out the text of each tweet in the result.</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">b)
+Generalize your program, print.py, to fetch and print 10 pages of results. Note
+that you can return a different page of results by passing an additional
+argument in the url:</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;</span></p>
+
+<p class="MsoNormal" style="text-indent:.5in;line-height:115%"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">http://search.twitter.com/search.json?q=microsoft&amp;page=2</span></p>
+
+<p class="MsoNormal" style="text-indent:.5in;line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">print.py
+should be executable in the following way:</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $
+python print.py</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">When
+executed, the script should print each tweet on an individual line to stdout.</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:red">What to turn in:
+Nothing. This is a warmup exercise.</span></p>
+
+<h3><a name="h.kh7ft0zcl78f"></a><span style="font-size:15.0pt;line-height:115%;
+font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#583F6F;font-weight:normal">Problem 1:
+Get Twitter Data</span></h3>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">As always,
+the first step is to </span><a href="https://class.coursera.org/datasci-001/wiki/view?page=GithubInstructions"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#1155CC">make sure your assignment materials up to date.</span></a></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">To access
+the live stream, you will need to install the</span><a href="http://pypi.python.org/pypi/oauth2/"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333;text-decoration:
+none"> </span></a><a href="http://pypi.python.org/pypi/oauth2/"><b><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#1155CC">oauth2 library</span></b></a><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333"> so you can
+properly authenticate.</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">This library
+is already installed on the </span><a href="https://spark-public.s3.amazonaws.com/datasci/Coursera-Data-Science-Ubuntu.ova"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#1155CC">class virtual machine</span></a><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">.&nbsp; Or you
+can install it yourself in your Python environment.</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">The steps
+below will help you set up your twitter account to be able to access the live
+1% stream.</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-left:.5in;text-indent:-17.95pt;line-height:
+115%"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">●<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">Create a twitter account if you do not already have one.</span></p>
+
+<p class="MsoNormal" style="margin-left:.5in;text-indent:-17.95pt;line-height:
+115%"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">●<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">Go to</span><a href="https://dev.twitter.com/apps"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333;text-decoration:none"> </span></a><a href="https://dev.twitter.com/apps"><b><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#1155CC">https://dev.twitter.com/apps</span></b></a><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333"> and log in with your twitter credentials.</span></p>
+
+<p class="MsoNormal" style="margin-left:.5in;text-indent:-17.95pt;line-height:
+115%"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">●<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">Click "create an application"</span></p>
+
+<p class="MsoNormal" style="margin-left:.5in;text-indent:-17.95pt;line-height:
+115%"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">●<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">Fill out the form and agree to the terms. Put in a dummy website
+if you don't have one you want to use.</span></p>
+
+<p class="MsoNormal" style="margin-left:.5in;text-indent:-17.95pt;line-height:
+115%"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">●<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">On the next page, scroll down and click "Create my access
+token"</span></p>
+
+<p class="MsoNormal" style="margin-left:.5in;text-indent:-17.95pt;line-height:
+115%"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">●<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">Copy your "Consumer key" and your "Consumer
+secret" into twitterstream.py</span></p>
+
+<p class="MsoNormal" style="margin-left:.5in;text-indent:-17.95pt;line-height:
+115%"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">●<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">Click "Create my access token." You can</span><a href="https://dev.twitter.com/docs/auth"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333;text-decoration:
+none"> </span></a><a href="https://dev.twitter.com/docs/auth"><b><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#1155CC">Read more about Oauth authorization.</span></b></a></p>
+
+<p class="MsoNormal" style="margin-left:.5in;text-indent:-17.95pt;line-height:
+115%"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">●<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">Open twitterstream.py and set the variables corresponding to the
+consumer key, consumer secret, access token, and access secret. </span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-left:.5in;line-height:115%"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">access_token_key = "&lt;Enter your access token key
+here&gt;"</span></p>
+
+<p class="MsoNormal" style="margin-left:.5in;line-height:115%"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">access_token_secret = "&lt;Enter your access token secret
+here&gt;"</span></p>
+
+<p class="MsoNormal" style="margin-left:.5in;line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-left:.5in;line-height:115%"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">consumer_key = "&lt;Enter consumer key&gt;"</span></p>
+
+<p class="MsoNormal" style="margin-left:.5in;line-height:115%"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">consumer_secret = "&lt;Enter consumer secret&gt;"</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-left:.5in;text-indent:-17.95pt;line-height:
+115%"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">●<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">Run the following and make sure you see data flowing and that no
+errors occur.&nbsp; Stop the program with Ctrl-C once you are satisfied.</span></p>
+
+<p class="MsoNormal" style="margin-left:.25in;line-height:115%"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">&nbsp;</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">$ python
+twitterstream.py</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">You can pipe
+the output to a file, wait a few minutes, then terminate the program to
+generate a sample.&nbsp; Use the following command:</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">$ python
+twitterstream.py &gt; output.txt</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">Let this
+script run for a minimum of <b>10 minutes</b>.</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">Keep the
+file output.txt for the duration of the assignment, we will be reusing it in
+later problems.</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">Don’t use
+someone else’s file; we will check for uniqueness in other parts of the
+assignment.</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:red">What to turn in:
+The first 20 lines of your file. You can get the first 20 lines by using the
+following command:</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:red">$ head -n 20
+output.txt</span></p>
+
+<h3><a name="h.dc12qojg3k7"></a><span style="font-size:15.0pt;line-height:115%;
+font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#583F6F;font-weight:normal">Problem 2:
+Derive the sentiment of each tweet</span></h3>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">For this
+part, you will compute the sentiment of each tweet based on the sentiment
+scores of the terms in the tweet. The sentiment of a tweet is equivalent to the
+sum of the sentiment scores for each term in the tweet.</span></p>
+
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">You are
+provided with a skeleton file, tweet_sentiment.py, which can be executed using
+the following command:</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; $
+python tweet_sentiment.py &lt;sentiment_file&gt; &lt;tweet_file&gt;</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">The file
+AFINN-111.txt contains a list of pre-computed sentiment scores. Each line in
+the file contains a word or phrase followed by a sentiment score. Each word or
+phrase found in a tweet, but not in AFINN-111.txt should be given a sentiment
+score of 0. See the file AFINN-README.txt for more information.</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">To
+ use the data in the AFINN-111.txt file, you may find it useful to build
+ a dictionary.  Note that the AFINN-111.txt file format is 
+tab-delimited, meaning that the term and the score are separated by a 
+tab character.  A tab character can be identified a "\t".The following 
+snippet may be useful:</span></p>  
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;</span></p>
+
+<pre>afinnfile = open("AFINN-111.txt")
+scores = {} # initialize an empty dictionary
+for line in afinnfile:
+  term, score  = line.split("\t")  # The file is tab-delimited. "\t" means "tab character"
+  scores[term] = int(score)  # Convert the score to an integer.
+
+print scores.items() # Print every (term, score) pair in the dictionary
+</pre>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">Assume the
+tweet file contains data formatted the same way as the livestream data.</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">Your script
+should print to stdout the sentiment of each tweet in the file, one sentiment
+per line:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;sentiment:float&gt;</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%">NOTE: You must provide a score for <strong>every</strong> tweet in the sample file, even if that score is zero.  However the sample file will only include English tweets</p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">The first
+sentiment corresponds to the first tweet in the input file, the second
+sentiment corresponds to the second tweet in the input file, and so on.<br>
+<br>
+Hints:  The json.loads function parses a string to JSON. </span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">Refer to the
+</span><a href="https://dev.twitter.com/docs/platform-objects/tweets"><b><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#1155CC">twitter documentation</span></b></a><a href="https://dev.twitter.com/docs/platform-objects/tweets"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333;text-decoration:none"> </span></a><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">in order to
+determine what field to parse.</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:red">What to turn in:
+tweet_sentiment.py</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<h3><a name="h.3o46w3ib1bjh"></a><span style="font-size:15.0pt;line-height:115%;
+font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#583F6F;font-weight:normal">Problem 3:
+Derive the sentiment of new terms</span></h3>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">In this part
+you will be creating a script that computes the sentiment for the terms that <b>do
+not</b> appear in the file AFINN-111.txt. </span></p>
+
+<p class="MsoNormal" style="line-height:115%">
+Here's how you might think about the problem: We know we can use certain
+ words to deduce the sentiment of a tweet.  Once you know the sentiment 
+of the tweets that contain some term, you can assign a sentiment to the 
+term itself.
+</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">Don't feel obligated to use it, but the
+following paper may be helpful for developing a sentiment metric.
+Look at the Opinion Estimation subsection of the Text Analysis section in particular.</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><a href="http://www.cs.cmu.edu/%7Erbalasub/publications/oconnor_balasubramanyan_routledge_smith.icwsm2010.tweets_to_polls.pdf"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#1155CC">O'Connor, B., Balasubramanyan, R., Routedge, B., &amp; Smith, N.
+From Tweets to Polls: Linking Text Sentiment to Public Opinion Time Series.
+(ICWSM), May 2010.</span></a></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">You are
+provided with a skeleton file, term_sentiment.py, which can be executed using
+the following command:</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; $
+python term_sentiment.py &lt;sentiment_file&gt; &lt;tweet_file&gt;</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">Your script
+should print to stdout each term-sentiment pair, one pair per line, in the
+following format:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;term:string&gt;
+&lt;sentiment:float&gt;</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">For example,
+if you have the pair (“foo”, 103.256) it should appear in the output as:</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; foo
+103.256</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">The order of
+your output does not matter.</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:red">What to turn in:
+term_sentiment.py</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">How we will
+grade Part 3: We will use a given file and make sure that your scores order the
+terms in roughly the same order as our solution.&nbsp; Your scores need not exactly
+match ours.</span></p>
+
+<p>If the grader is returning "Formatting error: <line of="" output="">",
+ make note of the line of text returned in the message.  This line 
+corresponds to a line of your output.  The grader will generate this 
+error if line.split() does not return exactly two items.  One common 
+source of this error is to not remove the the two calls to the "lines" 
+function in the solution template -- this function prints the number of 
+lines in each file.  Make sure to check the first two lines of your 
+output!</line></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:15.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#583F6F">Problem 4:
+Compute Term Frequency</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">Write a
+Python script, frequency.py, to compute the term frequency histogram of the
+livestream data you harvested from Problem 1.</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">The
+frequency of a term can be calculate with the following formula:<br>
+[# of occurrences of the term in all tweets]/[# of occurrences of all terms in
+all tweets]</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">frequency.py
+should take a file of tweets as an input and be usable in the following way:</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $
+python frequency.py &lt;tweet_file&gt;</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">Assume the
+tweet file contains data formatted the same way as the livestream data.</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">Your script
+should print to stdout each term-frequency pair, one pair per line, in the
+following format:</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;term:string&gt;
+&lt;frequency:float&gt;</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">For example,
+if you have the pair (bar, 0.1245) it should appear in the output as:</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; bar
+0.1245</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">Frequency
+measurements may take phrases into account, but this is not required. We only
+ask that you compute frequencies for individual tokens.</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">Depending on
+your method of parsing, you may end up with frequencies for hashtags, links,
+stop words, phrases, etc. Some noise is acceptable for the sake of keeping
+parsing simple.</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:red">What to turn in:
+frequency.py</span></p>
+
+<h2><span style="font-size:15.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#583F6F;font-weight:normal">Problem 5: Which State is happiest?</span></h2>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">Write a
+Python script, happiest_state.py, that returns the name of the happiest state
+as a string.</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">happiest_state.py
+should take a file of tweets as an input and be usable in the following way:</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $
+python happiest_state.py &lt;sentiment_file&gt; &lt;tweet_file&gt;</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">The file
+AFINN-111.txt contains a list of pre-computed sentiment score.</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">Assume the
+tweet file contains data formatted the same way as the livestream data.</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">We recommend
+that you build on your solution to Problem 2.</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">There are
+three different objects within the tweet that you can use to determine it’s
+origin.</span></p>
+
+<p class="MsoNormal" style="margin-left:.5in;text-indent:-17.95pt;line-height:
+115%"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">1<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">The coordinates object</span></p>
+
+<p class="MsoNormal" style="margin-left:.5in;text-indent:-17.95pt;line-height:
+115%"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">2<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">The place object</span></p>
+
+<p class="MsoNormal" style="margin-left:.5in;text-indent:-17.95pt;line-height:
+115%"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">3<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">The user object</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">You are free
+to develop your own strategy for determining the state that each tweet
+originates from.</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">Limit the
+tweets you analyze to those in the United States.</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">The live
+stream has a slightly different format from the response to the query you used
+in Problem 0. In this file, each line is a Tweet object, as</span><a href="https://dev.twitter.com/docs/platform-objects/tweets"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333;text-decoration:none"> </span></a><a href="https://dev.twitter.com/docs/platform-objects/tweets"><b><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#1155CC">described in the twitter documentation</span></b></a><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">.</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">Note: Not
+every tweet dictionary will have a text key -- real data is dirty. Be prepared
+to debug, and feel free to throw out tweets that your code can't handle to get
+something working.&nbsp; For example, non-English tweets.</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><b><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">Your script
+should print the two letter state abbreviation to stdout.</span></b></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333"><strong>Your script will not have access to the Internet, so you cannot rely on third party services to resolve geocoded locations.</strong></span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:red">What to turn in:
+happiest_state.py</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:15.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#583F6F">Problem 6:
+Top ten hash tags</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">Write a
+Python script, top_ten.py, that computes the ten most frequently occurring hash
+tags from the data you gathered in Problem 1.</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">top_ten.py
+should take a file of tweets as an input and be usable in the following way:</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $
+python top_ten.py &lt;tweet_file&gt;</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">Assume the
+tweet file contains data formatted the same way as the livestream data.</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">In the tweet
+file, each line is a Tweet object, as</span><a href="https://dev.twitter.com/docs/platform-objects/tweets"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333;text-decoration:none"> </span></a><a href="https://dev.twitter.com/docs/platform-objects/tweets"><b><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#1155CC">described in the twitter documentation</span></b></a><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+color:#333333">.<br>
+<strong>You should not be parsing the “text” field.</strong></span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">Your script
+should print to stdout each hashtag-count pair, one per line, in the following
+format:</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;hashtag:string&gt;
+&lt;count:float&gt;</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">For example,
+if you have the pair (baz, 30) it should appear in the output as:</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; baz
+30.0</span></p>
+
+<p class="MsoNormal" style="line-height:115%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">Remember
+your output must contain floats, not ints.</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#333333">&nbsp;</span></p>
+
+<p class="MsoNormal" style="line-height:115%"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:red">What to turn in:
+top_ten.py</span></p>
+
+</div>
+
+
+
+<p></p>
+
+            </div>
+        </div>
+    </div>
+        
+    
+    <script src="Assignment%20Details%20%7C%20Introduction%20to%20Data%20Science_files/204.js" async="" type="text/javascript"></script><script src="Assignment%20Details%20%7C%20Introduction%20to%20Data%20Science_files/ga.js" async="" type="text/javascript"></script><script src="Assignment%20Details%20%7C%20Introduction%20to%20Data%20Science_files/spark.js"></script>
+
+<script type="text/javascript">
+    // SET UP THE MULTITRACKER
+        window.logger = window.Log({level:"error"});
+        var parts = location.host.split(".");
+    while(parts.length > 2) { parts.shift(); }
+
+    window.multitracker = window.MultiTracker({logger:window.logger});
+    window.multitracker.register('204', window._204 = window._204 || []);
+    window.multitracker.register('ga', window._gaq = window._gaq || [], 'google');
+
+    // SET UP GA and 204
+    window._gaq.push(['_setAccount', 'UA-28377374-1']);
+    window._gaq.push(['_setDomainName', 'coursera.org']);
+    window._gaq.push(['_setAllowLinker', true]);  
+    window._gaq.push(['_trackPageview']);
+    
+    window._204.push({key:"pageview", val:{}});
+    window._204.push(["client", "spark"]);
+    window._204.push(["user", 3397025]);
+    window._204.push(["domain", "." + parts.join(".")]);
+
+    // override our multitracker queues with the ga queue when it is ready
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    
+      ga.onload = ga.onreadystatechange = function() {
+          ga.onreadystatechange = ga.onload = null;
+          window.multitracker.get('ga').queue = window._gaq;
+      };
+    })();
+
+    // override our multitracker queues with the 204 queue when it is ready
+    (function() {
+      var a = document.createElement('script'); a.type = 'text/javascript'; a.async = true;
+      a.src = 'https://eventing.coursera.org/204.min.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(a, s);
+      a.onload = a.onreadystatechange = function() {
+          a.onreadystatechange = a.onload = null;
+          window.multitracker.get('204').queue = window._204;
+      };
+    })();
+</script>
+
+<script>
+  // Set up shared AB testing object
+  (function() {
+    window.ab = {};
+
+    // we want to share the 204 session cookie with the AB session cookie...
+    var sessionId = AB.makeSession("__204u", {expires:356, domain:"." + location.host});
+        var debug = true;
+    
+    window.ab.user = window.AB(3397025, "user", {debug:debug, tracker:window.multitracker, logger:window.logger});
+    window.ab.session = window.AB(sessionId, "session", {debug:debug, tracker:window.multitracker, logger:window.logger});
+
+    if(window.CourseraABExperiments.user) {
+        window.ab.user.addExperiments(window.CourseraABExperiments.user);
+        window.ab.user.runExperimentsOn("body");
+    }
+
+    if(window.CourseraABExperiments.session) {
+        window.ab.session.addExperiments(window.CourseraABExperiments.session);
+        window.ab.session.runExperimentsOn("body");
+    }
+  })();
+</script>
+
+
+    <script>
+      // Set up help widget
+      (function() {
+        $("[data-helpwidget]").each(function() {
+            window.HelpWidget(this, {tracker: window.multitracker});
+        });
+       })();
+ 
+        $("[data-readme]").each(function() {
+            window.ReadMe(this);
+        });
+    </script>
+
+    <script src="Assignment%20Details%20%7C%20Introduction%20to%20Data%20Science_files/modal_focus.js" type="text/javascript"></script>
+    <script src="Assignment%20Details%20%7C%20Introduction%20to%20Data%20Science_files/get_query_parameters.js" type="text/javascript"></script>
+    <script src="Assignment%20Details%20%7C%20Introduction%20to%20Data%20Science_files/signature_track.js" type="text/javascript"></script>
+    <script src="Assignment%20Details%20%7C%20Introduction%20to%20Data%20Science_files/item_list.js" type="text/javascript"></script>
+    <script src="Assignment%20Details%20%7C%20Introduction%20to%20Data%20Science_files/navbar.js" type="text/javascript"></script>
+
+    
+    <script>
+     // Set up help widget
+      (function() {
+        $("[data-helpwidget]").each(function() {
+            window.HelpWidget(this, {tracker: window.multitracker});
+        });
+       })();
+    </script>
+
+    
+    <script type="text/x-mathjax-config;executed=true">
+MathJax.Hub.Config({
+  config: ["MMLorHTML.js"],
+  
+  styleSheets: [],
+  styles: {},
+
+  jax: ["input/TeX"],
+  
+  extensions: ["tex2jax.js"],
+
+  preJax: null,
+  postJax: null,
+
+  preRemoveClass: "MathJax_Preview",
+
+  showProcessingMessages: true,
+
+  messageStyle: "none",
+  
+  displayAlign: "center",
+  displayIndent: "0em",
+  
+  delayStartupUntil: "none",
+
+  skipStartupTypeset: false,
+  
+  elements: [],
+  
+  tex2jax: {
+	    inlineMath: [
+	                 ['$$','$$'],      // uncomment this for standard TeX math delimiters
+	                 ['\\(','\\)']
+	                 ],
+
+	                 displayMath: [
+	                 ['\\[','\\]']
+	                 ],
+
+    skipTags: ["script","noscript","style","textarea","pre","code"],
+    ignoreClass: "tex2jax_ignore",
+    processClass: "tex2jax_process",
+    processEscapes: false,
+    processEnvironments: true,
+    preview: "TeX"
+    
+  },
+  
+  mml2jax: {
+    preview: "alttext"
+    
+  },
+  
+  jsMath2jax: {
+    preview: "TeX"
+    
+  },
+
+  TeX: {
+    TagSide: "right",
+    TagIndent: ".8em",
+    MultLineWidth: "85%",
+    Macros: {},
+
+    extensions: ["AMSmath.js", "AMSsymbols.js"]
+    
+  },
+
+  //============================================================================
+  //
+  //  These parameters control the MathML inupt jax.
+  //
+  MathML: {
+    //
+    //  This specifies whether to use TeX spacing or MathML spacing when the
+    //  HTML-CSS output jax is used.
+    //
+    useMathMLspacing: false
+  },
+  
+  //============================================================================
+  //
+  //  These parameters control the HTML-CSS output jax.
+  //
+  "HTML-CSS": {
+    
+    scale: 100,
+    
+    availableFonts: ["STIX","TeX"],
+    
+    preferredFont: "TeX",
+    
+    webFont: "TeX",
+    
+    imageFont: "TeX",
+    
+    undefinedFamily: "STIXGeneral,'Arial Unicode MS',serif",
+      
+    showMathMenu: true,
+
+    styles: {},
+    
+    tooltip: {
+      delayPost: 600,          // milliseconds delay before tooltip is posted after mouseover
+      delayClear: 600,         // milliseconds delay before tooltip is cleared after mouseout
+      offsetX: 10, offsetY: 5  // pixels to offset tooltip from mouse position
+    }
+  },
+  
+  //============================================================================
+  //
+  //  These parameters control the NativeMML output jax.
+  //
+  NativeMML: {
+
+    scale: 100,
+
+    showMathMenu: true,
+    showMathMenuMSIE: true,
+
+    styles: {}
+  },
+  
+  MathMenu: {
+    delay: 400,
+    
+    helpURL: "http://www.mathjax.org/help/user/",
+
+    showRenderer: true,
+    showFontMenu: false,
+    showContext:  false,
+
+    windowSettings: {
+      status: "no", toolbar: "no", locationbar: "no", menubar: "no",
+      directories: "no", personalbar: "no", resizable: "yes", scrollbars: "yes",
+      width: 100, height: 50
+    },
+    
+    styles: {}
+    
+  },
+
+  MMLorHTML: {
+    prefer: {
+      MSIE:    "MML",
+      Firefox: "MML",
+      Opera:   "HTML",
+      other:   "HTML"
+    }
+  }
+});
+</script>
+<script type="text/javascript">
+(function () {
+
+  function loadMathJax() {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://duqnjvq4jwr55.cloudfront.net/2.1/MathJax.js";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  }
+
+  window.loadOrRefreshMathJax = function(domId) {
+    if (window.MathJax) {
+      if (domId) {
+        MathJax.Hub.Queue(["Typeset", MathJax.Hub, domId]);
+      } else {
+        MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+      }
+    } else {
+      loadMathJax();
+    }
+  }
+})();
+</script>
+    <script type="text/javascript">
+        var site_base_url = "https:\/\/www.coursera.org\/";
+        var site_static_asset_url = "https:\/\/dt5zaw6a98blc.cloudfront.net\/site-static\/";
+        var spark_class_short_name = "datasci";
+        var spark_class_id = 346;
+        var spark_class_url = "\/datasci-001";
+        var spark_signature_url = "https:\/\/class.coursera.org\/datasci-001\/signature\/";
+        
+        var course_strings_name = "Introduction to Data Science";
+        var student_full_name = "Eloy D\u00edaz \u00c1lvarez";
+    </script>
+
+    
+<script type="text/javascript">$(function() { loadOrRefreshMathJax();})</script>
+
+
+
+
+</body></html>
